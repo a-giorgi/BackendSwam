@@ -3,7 +3,7 @@
 This project is a geolocation-based news aggregator composed of:
 
 - A JavaEE back-end deployed on the Wildfly application server.
-- A VueJS JavaScript front-end.
+- A VueJS TypeScript front-end.
 
 The back-end employs several noteworthy technologies including:
 
