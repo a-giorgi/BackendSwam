@@ -1,0 +1,69 @@
+{
+  "name": "elaborato-cg-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 3000",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.0-3",
+    "@material/textfield": "^8.0.0",
+    "@popperjs/core": "^2.5.4",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.0-beta1",
+    "core-js": "^3.6.5",
+    "js-cookie": "^2.2.1",
+    "material-components-web": "^8.0.0",
+    "vue": "^3.0.0",
+    "vue-axios": "^3.2.0",
+    "vue-class-component": "^8.0.0-0",
+    "vue-material": "^1.0.0-beta-15",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-rc.2",
+    "vuex-persistedstate": "^4.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "typescript": "~3.9.3",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-explicit-any": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
