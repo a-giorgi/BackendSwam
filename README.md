@@ -19,3 +19,6 @@ The front-end is developed using Vue.js (Version 3) and incorporates elements of
 - **Asynchronous Design with Axios and Promises:** Enables non-blocking, asynchronous requests to the back-end server for enhanced performance.
 
 For styling, the CSS framework Tailwind is utilized.
+
+## Demonstration video
+[![Front end video](https://github.com/a-giorgi/NewsAggregator/blob/84efe8a0fabc95fe857e17da511b30b4b7d1a2a5/images/preview.png)](https://www.youtube.com/watch?v=9o_whrqZ7xM)
