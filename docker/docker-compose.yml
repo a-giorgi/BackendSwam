@@ -1,0 +1,40 @@
+version: "2"
+
+services:
+  app:
+    container_name: "app"
+    image: "kgiorgi/w21m8:latest"
+    environment:
+      - WILDFLY_USER=admin
+      - WILDFLY_PASS=adminPassword
+      - DB_NAME=personal
+      - DB_USER=andrea
+      - DB_PASS=password
+      - DB_URI=db:3306
+    depends_on:
+      - db
+    volumes: 
+    # binding from a local folder and the wildfly's deploy folder inside the container
+      - ./workdir/deploy/wildfly/:/opt/jboss/wildfly/standalone/deployments/:rw
+    ports:
+      - "8080:8080" # application
+      - "9990:9990" # admin console
+      - "5005:5005" # debug port
+
+  db:
+    container_name: "db"
+    image: "mysql:8.0.22"
+    environment:
+      - MYSQL_DATABASE=personal
+      - MYSQL_USER=andrea
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=secret
+    volumes:
+      - ./workdir/db/init/:/docker-entrypoint-initdb.d/ # init database
+      - ./workdir/db/data/:/var/lib/mysql/              # data storage
+    ports:
+      - "3306:3306"
+
+networks:
+    default:
+        driver: bridge
