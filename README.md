@@ -22,3 +22,26 @@ For styling, the CSS framework Tailwind is utilized.
 
 ## Demonstration video
 [![Front end video](https://github.com/a-giorgi/NewsAggregator/blob/84efe8a0fabc95fe857e17da511b30b4b7d1a2a5/images/preview.png)](https://www.youtube.com/watch?v=9o_whrqZ7xM)
+
+## Installation Instructions
+
+### Back-end
+
+1. Install Docker.
+2. Go to the directory where the `docker-compose.yml` file is located.
+3. Run the command `docker-compose up -d` to start the backend services in detached mode.
+4. Copy the `backend.war` file into the directory `./workdir/deploy/wildfly`. This file is generated in the same directory as `docker-compose.yml`.
+5. Wait until you see a file named `backend.war.deployed` appear in the directory `./workdir/deploy/wildfly`.
+6. The backend will be available at: [http://localhost:8080/backend/rest/](http://localhost:8080/backend/rest/)
+
+### Front-end
+
+1. Install Node.js.
+2. Navigate to the frontend directory.
+3. Run the following commands in sequence:
+    ```bash
+    npm install
+    npm run build
+    npm run serve
+    ```
+4. The frontend will be available at: [http://localhost:3000](http://localhost:3000)
