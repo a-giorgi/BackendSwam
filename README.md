@@ -45,3 +45,6 @@ For styling, the CSS framework Tailwind is utilized.
     npm run serve
     ```
 4. The frontend will be available at: [http://localhost:3000](http://localhost:3000)
+
+---
+**Note:** This project is no longer maintained. I've decided to present it here because it contains very interesting technologies. Feel free to use it as a reference for your own projects.
